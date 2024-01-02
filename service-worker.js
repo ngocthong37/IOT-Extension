@@ -25,13 +25,13 @@ chrome.omnibox.onInputEntered.addListener((text) => {
       } else if (data === "defacement") {
         console.log("come here: ", data);
         chrome.storage.local.set({ originalURL: text }, function () {
-          chrome.tabs.create({ url: "warning.html" });
+          chrome.tabs.create({ url: "warning1.html" });
         });
       }
       else if (data === "phishing") {
         console.log("come here: ", data);
         chrome.storage.local.set({ originalURL: text }, function () {
-          chrome.tabs.create({ url: "warning.html" });
+          chrome.tabs.create({ url: "warning2.html" });
         });
       }
       else if (data === "malware") {
