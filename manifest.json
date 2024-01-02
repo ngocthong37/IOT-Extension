@@ -10,7 +10,7 @@
     "webNavigation",
     "notifications",
     "*://*/*"
-  ], 
+  ],
   "background": {
     "service_worker": "service-worker.js"
   },

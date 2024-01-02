@@ -11,6 +11,13 @@ chrome.omnibox.onInputEntered.addListener((text) => {
   chrome.tabs.create({ url: newURL });
 });
 
+window.addEventListener("message", function (event) {
+  const message = event.data;
+  if (message.action === "closeTab") {
+    window.close(); // Đóng tab hiện tại
+  }
+});
+
 
 
 // fetch(apiUrl)
