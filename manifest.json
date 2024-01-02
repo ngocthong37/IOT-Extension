@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "URL Printer",
+  "name": "Phát hiện URL độc hại",
   "version": "1.0",
   "permissions": [
     "tabs",
